@@ -46,17 +46,17 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:background="#FDB1B1"
-        android:orientation="vertical"
-        android:gravity="center_horizontal">
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
 
         <EditText
             android:layout_width="380dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:hint="TextField"
-            android:textColorHint="#d56f63"
             android:drawableRight="@drawable/ic_search"
-            android:paddingLeft="10dp"/>
+            android:hint="TextField"
+            android:paddingLeft="10dp"
+            android:textColorHint="#d56f63" />
     </LinearLayout>
 
     <LinearLayout
@@ -65,10 +65,66 @@
         android:background="#fff"
         android:padding="10dp">
 
-        <ImageView
+        <View
             android:layout_width="203dp"
             android:layout_height="232dp"
             android:background="@drawable/fundoview" />
+
+        <LinearLayout
+            android:layout_width="163dp"
+            android:layout_height="232dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Price:"
+                android:textColor="#d56f63" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/fundoview" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Image ID:"
+                android:textColor="#d56f63" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/fundoview" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="115dp"
+                android:background="@drawable/caixatexto"
+                android:gravity="center"
+                android:text="Download"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/fundoview" />
+        </LinearLayout>
+
+
     </LinearLayout>
 
 
